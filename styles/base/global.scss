@@ -1,0 +1,52 @@
+@use '../shared/description.scss' as *;
+@use '../shared/titles.scss' as *;
+
+@use '../utils/variables.scss' as *;
+@use './fonts.scss' as *;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: calc(100vw / 1440 * 10);
+	line-height: 1;
+	overflow: hidden;
+	position: fixed;
+	text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+h1 {
+	font-family: $font-noto-sans;
+	@extend %title-150;
+}
+
+h2 {
+	font-family: $font-noto-sans;
+	@extend %title-57;
+}
+
+h3,
+h4 {
+	font-family: $font-noto-sans;
+	@extend %title-28;
+}
+
+p,
+a {
+	font-family: $font-kara;
+	@extend %description-19;
+}
+
+span {
+	font-family: $font-kara;
+	@extend %description-13;
+}

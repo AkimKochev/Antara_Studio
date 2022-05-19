@@ -1,0 +1,17 @@
+@use '../utils/variables.scss' as *;
+
+@font-face {
+	font-family: $font-noto-sans;
+	src: url('../static/fonts/NotoSerifDisplay-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: $font-kara;
+	src: url('../static/fonts/Karla-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

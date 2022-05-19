@@ -1,0 +1,19 @@
+@use '../utils/responsive.scss' as *;
+
+%description-13 {
+	font-size: 1.3rem;
+	line-height: 1.29;
+
+	@include media('<phone') {
+		font-size: 1.3rem;
+	}
+}
+
+%description-19 {
+	font-size: 1.9rem;
+	line-height: 1.28;
+
+	@include media('<phone') {
+		font-size: 1.3rem;
+	}
+}
