@@ -13,8 +13,8 @@
 html {
 	font-size: calc(100vw / 1440 * 10);
 	line-height: 1;
-	overflow: hidden;
-	position: fixed;
+	// overflow: hidden;
+	// position: fixed;
 	text-rendering: optimizeLegibility;
 }
 
@@ -22,6 +22,20 @@ html,
 body {
 	height: 100%;
 	width: 100%;
+	background-color: #f5f5f5;
+}
+
+ul,
+menu {
+	list-style: none;
+
+	display: flex;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
 }
 
 h1 {

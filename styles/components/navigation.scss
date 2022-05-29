@@ -1,7 +1,43 @@
+@use '../shared/description.scss' as *;
+@use '../shared/links.scss' as *;
+
 .navigation {
 	display: flex;
-	position: fixed;
-	top: 0;
-	left: 0;
+	gap: 3.1rem;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
+
+	margin-bottom: 12.4rem;
+	padding-block: 3.5rem 0;
+	padding-inline: 11.8rem;
+
+	&__container {
+		gap: 3.1rem;
+	}
+
+	.navigation__item__link {
+		text-transform: uppercase;
+
+		&:not(.btn--cto a) {
+			@extend %link-hover;
+		}
+	}
+
+	.navigation__item.btn--cto {
+		padding: 0.5rem 1.8rem;
+		cursor: pointer;
+	}
+
+	.btn__cto__container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		svg {
+			position: absolute;
+			height: 135%;
+		}
+	}
 }
