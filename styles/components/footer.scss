@@ -1,11 +1,16 @@
 @use '../shared/titles.scss' as *;
 @use '../utils/variables.scss' as *;
+@use '../utils/responsive.scss' as *;
 
 .footer {
 	background-color: #000;
 	padding-block: 6rem 3rem;
 	padding-left: 11.5rem;
 	color: #fff;
+
+	@include media('<tablet') {
+		padding-left: 7rem;
+	}
 
 	.footer__text {
 		text-transform: uppercase;

@@ -7,6 +7,10 @@
 	@include media('<phone') {
 		font-size: 5.5rem;
 	}
+
+	@include media('<tablet') {
+		font-size: 18rem;
+	}
 }
 
 %title-57 {
@@ -15,6 +19,10 @@
 
 	@include media('<phone') {
 		font-size: 2.5rem;
+	}
+
+	@include media('<tablet') {
+		font-size: 6.8rem;
 	}
 }
 

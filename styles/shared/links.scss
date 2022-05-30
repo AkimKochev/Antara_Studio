@@ -12,11 +12,25 @@
 
 		transform: scaleX(0);
 		transform-origin: right;
-		transition: transform 0.2s ease-out;
+		transition: transform 0.3s ease-out 0.1s;
 	}
 
 	&:hover::before {
 		transform: scaleX(1);
 		transform-origin: left;
+	}
+}
+// stroke-dasharray: 100;
+// stroke-dashoffset: 0;
+%navigate__hover {
+	.navigate__svg__outer,
+	.navigate__svg__arrow {
+		transition: transform 0.45s ease-out;
+	}
+
+	&:hover {
+		.navigate__svg__outer line {
+			transform: rotate(45deg);
+		}
 	}
 }

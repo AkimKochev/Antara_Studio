@@ -1,5 +1,6 @@
 @use '../shared/description.scss' as *;
 @use '../shared/links.scss' as *;
+@use '../utils/responsive.scss' as *;
 
 .navigation {
 	display: flex;

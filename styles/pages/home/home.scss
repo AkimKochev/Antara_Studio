@@ -1,11 +1,17 @@
 @use '../../utils/functions.scss' as *;
 @use '../../utils/variables.scss' as *;
+@use '../../utils/responsive.scss' as *;
+@use '../../shared/links.scss' as *;
 
 .circle {
 	position: absolute;
 	filter: blur(90px);
 	aspect-ratio: 1 / 1;
+	border-radius: 50%;
 	z-index: z('circles');
+	@include media('<tablet') {
+		display: none;
+	}
 }
 
 .circle.circle--bage {
@@ -27,6 +33,10 @@
 	position: relative;
 	z-index: z('content');
 	margin-left: 22.85rem;
+
+	@include media('<tablet') {
+		margin-left: 7rem;
+	}
 }
 
 .home__title {
@@ -69,11 +79,21 @@
 	justify-content: flex-start;
 	gap: 1.85rem;
 	cursor: pointer;
+
+	@extend %navigate__hover;
 }
 
 .scroll__svg__inner,
 .navigate__svg__inner {
 	position: absolute;
+}
+
+.scroll__svg__outer,
+.navigate__svg__outer {
+	transform-origin: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .home__about {
@@ -87,13 +107,17 @@
 .home__selected__works {
 	margin-left: 11.6rem;
 
+	@include media('<tablet') {
+		margin-left: 7rem;
+	}
+
 	.selected__works__header {
 		margin-block: 15.8rem 9rem;
 		margin-inline: auto;
 		padding-right: 11.6rem;
 		width: 83%;
 		display: flex;
-		gap: 8.2rem;
+		gap: 10.2rem;
 		justify-content: space-between;
 		align-items: center;
 		white-space: nowrap;
@@ -101,6 +125,10 @@
 		span {
 			height: 0.1rem;
 			background-color: #000;
+			width: 100%;
+		}
+
+		@include media('<tablet') {
 			width: 100%;
 		}
 	}
@@ -131,6 +159,10 @@
 	margin-block: 17.4rem 8.1rem;
 	margin-inline: 11.6rem;
 
+	@include media('<tablet') {
+		margin-inline: 7rem;
+	}
+
 	display: flex;
 	// gap: 23rem;
 	justify-content: space-between;
@@ -148,5 +180,9 @@
 	.services__list {
 		display: inline-block;
 		margin-block: 2rem 3rem;
+	}
+
+	.services__container {
+		@extend %navigate__hover;
 	}
 }
