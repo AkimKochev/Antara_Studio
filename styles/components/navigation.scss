@@ -10,8 +10,11 @@
 	width: 100%;
 
 	margin-bottom: 12.4rem;
-	padding-block: 3.5rem 0;
+	padding-block: 34px 0;
 	padding-inline: 11.8rem;
+	@include media('<phone') {
+		padding-inline: 2.3rem;
+	}
 
 	&__container {
 		gap: 3.1rem;
@@ -39,6 +42,12 @@
 		svg {
 			position: absolute;
 			height: 135%;
+		}
+	}
+
+	@include media('<phone') {
+		.navigation__menu__wrapper {
+			display: none;
 		}
 	}
 }

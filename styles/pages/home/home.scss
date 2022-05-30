@@ -37,6 +37,10 @@
 	@include media('<tablet') {
 		margin-left: 7rem;
 	}
+
+	@include media('<phone') {
+		margin-left: 2.3rem;
+	}
 }
 
 .home__title {
@@ -44,6 +48,10 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2.8rem;
+	@include media('<phone') {
+		margin-bottom: 4rem;
+		gap: 1.4rem;
+	}
 
 	.title__item {
 		display: flex;
@@ -53,16 +61,72 @@
 		&__text {
 			line-height: 0.83;
 		}
+
+		@include media('<phone') {
+			&__span {
+				visibility: hidden;
+				opacity: 0;
+				display: none;
+			}
+		}
+	}
+}
+
+.phone__description__container {
+	display: none;
+
+	@include media('<phone') {
+		display: flex;
+		flex-wrap: wrap;
+		white-space: nowrap;
+		gap: 2rem;
+		column-gap: 4.2rem;
+		margin-bottom: 6rem;
 	}
 }
 
 .home__scroll__svg {
 	position: absolute;
 	right: 3.6rem;
-	bottom: 6.4rem;
+	bottom: 0;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 1.85rem;
+
+	@include media('<tablet') {
+		width: 10rem;
+		gap: 0;
+
+		.scroll__svg__inner {
+			width: 3rem;
+		}
+
+		.scroll__svg__outer {
+			width: 12rem;
+		}
+
+		.scroll__svg__arrow {
+			width: 6rem;
+		}
+	}
+
+	@include media('<phone') {
+		width: auto;
+		right: 2.3rem;
+
+		.scroll__svg__inner {
+			width: 2rem;
+		}
+
+		.scroll__svg__outer {
+			width: 6rem;
+		}
+
+		.scroll__svg__arrow {
+			width: 3rem;
+		}
+	}
 }
 
 .scroll__svg__container,
@@ -70,6 +134,15 @@
 .navigate__svg__container,
 .navigate__to__svg {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.scroll__svg__inner,
+.scroll__svg__outer,
+.scroll__svg__arrow {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -101,6 +174,10 @@
 		margin-block: 4rem 3rem;
 		display: flex;
 		gap: 4.2rem;
+
+		@include media('<phone') {
+			flex-direction: column;
+		}
 	}
 }
 
@@ -111,6 +188,10 @@
 		margin-left: 7rem;
 	}
 
+	@include media('<phone') {
+		margin-left: 2.3rem;
+	}
+
 	.selected__works__header {
 		margin-block: 15.8rem 9rem;
 		margin-inline: auto;
@@ -118,12 +199,16 @@
 		width: 83%;
 		display: flex;
 		gap: 10.2rem;
+		@include media('<phone') {
+			padding-right: 2.3rem;
+			gap: 5rem;
+		}
 		justify-content: space-between;
 		align-items: center;
 		white-space: nowrap;
 
 		span {
-			height: 0.1rem;
+			height: 0.07rem;
 			background-color: #000;
 			width: 100%;
 		}
@@ -167,6 +252,12 @@
 	// gap: 23rem;
 	justify-content: space-between;
 	align-items: flex-end;
+
+	@include media('<phone') {
+		margin-inline: 2.3rem;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
 
 	&__image {
 		width: 100%;

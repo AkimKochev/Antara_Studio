@@ -12,7 +12,7 @@
 
 		transform: scaleX(0);
 		transform-origin: right;
-		transition: transform 0.3s ease-out 0.1s;
+		transition: transform 0.3s ease-out;
 	}
 
 	&:hover::before {
@@ -20,17 +20,24 @@
 		transform-origin: left;
 	}
 }
-// stroke-dasharray: 100;
-// stroke-dashoffset: 0;
 %navigate__hover {
 	.navigate__svg__outer,
-	.navigate__svg__arrow {
+	.line--offser {
 		transition: transform 0.45s ease-out;
 	}
 
+	.line--offset {
+		stroke-dasharray: 100;
+		stroke-dashoffset: 100;
+	}
+
 	&:hover {
-		.navigate__svg__outer line {
+		.navigate__svg__outer {
 			transform: rotate(45deg);
+		}
+
+		.line--offset {
+			stroke-dashoffset: 10;
 		}
 	}
 }

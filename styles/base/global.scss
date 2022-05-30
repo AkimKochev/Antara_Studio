@@ -1,8 +1,12 @@
 @use '../shared/description.scss' as *;
 @use '../shared/titles.scss' as *;
 
+@use '../utils/responsive.scss' as *;
+
 @use '../utils/variables.scss' as *;
 @use './fonts.scss' as *;
+
+//! TODO ANIMATION STROKE
 
 * {
 	margin: 0;
@@ -12,7 +16,9 @@
 
 html {
 	font-size: calc(100vw / 1440 * 10);
-	line-height: 1;
+	@include media('<phone') {
+		font-size: calc(100vw / 422 * 10);
+	}
 	// overflow: hidden;
 	// position: fixed;
 	text-rendering: optimizeLegibility;
@@ -28,6 +34,10 @@ body {
 ::-webkit-scrollbar {
 	display: none;
 	width: 0;
+}
+
+::selection {
+	color: #979797;
 }
 
 ul,
