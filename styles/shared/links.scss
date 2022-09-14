@@ -9,10 +9,13 @@
 		background-color: #000;
 		width: 100%;
 		height: 0.1rem;
-
 		transform: scaleX(0);
 		transform-origin: right;
-		transition: transform 0.3s ease-out;
+		transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+		-webkit-transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+		-moz-transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+		-ms-transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+		-o-transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
 	}
 
 	&:hover::before {
@@ -22,8 +25,20 @@
 }
 %navigate__hover {
 	.navigate__svg__outer,
-	.line--offser {
-		transition: transform 0.45s ease-out;
+	.line--offset {
+		transition: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1),
+			stroke-dashoffset 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+		//animation: fill 800ms ease-out;
+		//animation-fill-mode: forwards;
+		//-webkit-animation: fill 800ms ease-out;
+		-webkit-transition: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1),
+			stroke-dashoffset 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+		-moz-transition: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1),
+			stroke-dashoffset 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+		-ms-transition: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1),
+			stroke-dashoffset 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+		-o-transition: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1),
+			stroke-dashoffset 0.45s cubic-bezier(0.77, 0, 0.175, 1);
 	}
 
 	.line--offset {

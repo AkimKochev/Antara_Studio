@@ -1,7 +1,7 @@
 @use '../utils/responsive.scss' as *;
 
 %description-13 {
-	font-size: 1.3rem;
+	font-size: 1.22rem;
 	line-height: 1.29;
 
 	@include media('<tablet') {
@@ -14,16 +14,16 @@
 }
 
 %description-19 {
-	font-size: 1.9rem;
+	font-size: 1.8rem;
 	line-height: 1.28;
 
 	@include media('<tablet') {
-		font-size: 2.3rem;
+		font-size: 2.2rem;
 	}
 
 	@include media('>tablet') {
 		// prettier-ignore
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	@include media('<phone') {

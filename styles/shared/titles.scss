@@ -1,7 +1,7 @@
 @use '../utils/responsive.scss' as *;
 
 %title-150 {
-	font-size: 15rem;
+	font-size: 13rem;
 	line-height: 1.04;
 
 	@include media('<tablet') {

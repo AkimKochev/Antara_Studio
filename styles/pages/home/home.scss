@@ -32,7 +32,7 @@
 .home__about {
 	position: relative;
 	z-index: z('content');
-	margin-left: 22.85rem;
+	margin-left: 28rem;
 
 	@include media('<tablet') {
 		margin-left: 7rem;
@@ -47,10 +47,14 @@
 	margin-bottom: 21.8rem;
 	display: flex;
 	flex-direction: column;
-	gap: 2.8rem;
+	// gap: 2.8rem;
 	@include media('<phone') {
 		margin-bottom: 4rem;
 		gap: 1.4rem;
+	}
+
+	.title__item__span {
+		margin-bottom: 14px;
 	}
 
 	.title__item {
@@ -228,7 +232,11 @@
 			justify-content: center;
 			align-items: flex-end;
 			gap: 1.5rem;
-
+			transition: opacity 0.75s ease-out;
+			-webkit-transition: opacity 0.75s ease-out;
+			-moz-transition: opacity 0.75s ease-out;
+			-ms-transition: opacity 0.75s ease-out;
+			-o-transition: opacity 0.75s ease-out;
 			&:nth-child(odd) {
 				flex-direction: row-reverse;
 			}

@@ -48,34 +48,40 @@ menu {
 	align-items: center;
 }
 
+span {
+	font-family: $font-kara;
+	@extend %description-13;
+}
+
 a {
 	text-decoration: none;
 	color: #000;
 }
 
-h1 {
+h1,
+h1 span {
 	font-family: $font-noto-sans;
 	@extend %title-150;
 }
 
-h2 {
+h2,
+h2 span {
 	font-family: $font-noto-sans;
 	@extend %title-57;
 }
 
 h3,
-h4 {
+h4,
+h3 span,
+h4 span {
 	font-family: $font-noto-sans;
 	@extend %title-28;
 }
 
 p,
-a {
+a,
+p span,
+a span {
 	font-family: $font-kara;
 	@extend %description-19;
-}
-
-span {
-	font-family: $font-kara;
-	@extend %description-13;
 }

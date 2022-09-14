@@ -1,7 +1,10 @@
 import gsap from 'gsap';
+import Home from './pages/Home/index.js';
 
 class App {
-	constructor() {}
+	constructor() {
+		new Home();
+	}
 }
 
 new App();

@@ -27,7 +27,7 @@
 						as much as we do.
 					h1.title__item__text meet
 
-			.phone__description__container
+			.phone__description__container(data-reveal)
 				p.description__text.
 							Antara is an award-winning design studio<br>
 							that shapes ideas through clever and<br>
@@ -77,18 +77,18 @@
 						</svg>
 				.scroll__svg__arrow
 					<svg width="51" height="192" viewBox="0 0 51 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line x1="25.3807" y1="0.701758" x2="25.3807" y2="191.6" stroke="black" stroke-width="0.8" stroke-linecap="round"/>
-					<path d="M25.3818 191.447V191.447C25.3818 176.584 34.8394 163.368 48.9078 158.572L49.6849 158.307" stroke="black" stroke-linecap="round"/>
-					<path d="M25.3818 191.447V191.447C25.3818 176.584 15.9243 163.368 1.85589 158.572L1.07873 158.307" stroke="black" stroke-linecap="round"/>
+					<line class="line-arrow" x1="25.3807" y1="0.701758" x2="25.3807" y2="191.6" stroke="black" stroke-width="0.8" stroke-linecap="round"/>
+					<path class="l1-arrow" d="M25.3818 191.447V191.447C25.3818 176.584 34.8394 163.368 48.9078 158.572L49.6849 158.307" stroke="black" stroke-linecap="round"/>
+					<path class="l2-arrow" d="M25.3818 191.447V191.447C25.3818 176.584 15.9243 163.368 1.85589 158.572L1.07873 158.307" stroke="black" stroke-linecap="round"/>
 					</svg>
 
 		.home__about
-			h2.home__about__title.
+			h2.home__about__title(data-reveal).
 				We are commited to design memorable<br>
 				brands that tell engaging stories<br>
 				througt concept-driven design<br>
 				solutions
-			.home__about__description
+			.home__about__description(data-reveal)
 				p.about__description.
 					Have you ever thought about what<br>
 					makes some brands stand out?<br>
@@ -134,8 +134,8 @@
 					<svg width="81" height="22" viewBox="0 0 81 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<line x1="0.844092" y1="10.8266" x2="80.0834" y2="10.8266" stroke="black" stroke-width="0.8" stroke-linecap="round"/>
 					<line class="line--offset" x1="0.844092" y1="10.8266" x2="80.0834" y2="10.8266" stroke="black" stroke-width="0.9" stroke-linecap="round"/>
-					<path d="M80.2529 11.0586V11.0586C74.047 11.0586 68.5289 7.10981 66.5264 1.23585L66.4158 0.911357" stroke="black" stroke-linecap="round"/>
-					<path d="M80.2529 11.0586V11.0586C74.047 11.0586 68.5289 15.0074 66.5264 20.8813L66.4158 21.2058" stroke="black" stroke-linecap="round"/>
+					<path d="M80.2529 11.0586V11.0586C74.047 11.0586 68.5289 7.10981 66.5264 1.23585L66.4158 0.911357" stroke="black" stroke-linecap="round" stroke-width="1.2"/>
+					<path d="M80.2529 11.0586V11.0586C74.047 11.0586 68.5289 15.0074 66.5264 20.8813L66.4158 21.2058" stroke="black" stroke-linecap="round" stroke-width="1.2"/>
 					</svg>
 
 		.home__selected__works
@@ -145,34 +145,34 @@
 				p.selected__works__text Projects
 
 			.selected__works__wrapper
-				.selected__works__item
+				.selected__works__item(data-reveal-title)
 					p.selected__works__digit 01.
 					h1.selected__works__title Grama Coffee
-				.selected__works__item
+				.selected__works__item(data-reveal-title)
 					p.selected__works__digit 02.
 					h1.selected__works__title Star Fades Intl
-				.selected__works__item
+				.selected__works__item(data-reveal-title)
 					p.selected__works__digit 03.
 					h1.selected__works__title Plutonic
-				.selected__works__item
+				.selected__works__item(data-reveal-title)
 					p.selected__works__digit 04.
 					h1.selected__works__title FitFreedom
-				.selected__works__item
+				.selected__works__item(data-reveal-title)
 					p.selected__works__digit 05.
 					h1.selected__works__title San Cavetano
-				.selected__works__item
+				.selected__works__item(data-reveal-title)
 					p.selected__works__digit 06.
 					h1.selected__works__title Doble Erre
 
 		.home__contact
 			.home__contact__content
-				h2.home__contact__title Connetions<br>are what we do best
-				p.home__contact__text.
+				h2.home__contact__title(data-reveal) Connetions<br>are what we do best
+				p.home__contact__text(data-reveal).
 					Connecting clients with their customer is<br>
 					the key to success, and we do it throught a<br>
 					series of design services.
 
-				a.services__container(href="/services")
+				a.services__container(href="/services" data-reveal)
 					p.services__categories__text Our Services
 					h4.services__categories__title A deep dive into our client's needs
 
@@ -217,8 +217,8 @@
 								<svg width="81" height="22" viewBox="0 0 81 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<line x1="0.844092" y1="10.8266" x2="80.0834" y2="10.8266" stroke="black" stroke-width="0.8" stroke-linecap="round"/>
 								<line class="line--offset" x1="0.844092" y1="10.8266" x2="80.0834" y2="10.8266" stroke="black" stroke-width="0.9" stroke-linecap="round"/>
-								<path d="M80.2529 11.0586V11.0586C74.047 11.0586 68.5289 7.10981 66.5264 1.23585L66.4158 0.911357" stroke="black" stroke-linecap="round"/>
-								<path d="M80.2529 11.0586V11.0586C74.047 11.0586 68.5289 15.0074 66.5264 20.8813L66.4158 21.2058" stroke="black" stroke-linecap="round"/>
+								<path d="M80.2529 11.0586V11.0586C74.047 11.0586 68.5289 7.10981 66.5264 1.23585L66.4158 0.911357" stroke="black" stroke-linecap="round" stroke-width="1.2"/>
+								<path d="M80.2529 11.0586V11.0586C74.047 11.0586 68.5289 15.0074 66.5264 20.8813L66.4158 21.2058" stroke="black" stroke-linecap="round" stroke-width="1.2"/>
 								</svg>
 
 			figure.home__contact__media
